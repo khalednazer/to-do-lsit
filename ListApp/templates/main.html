@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'bootstrab/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrab/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrab/bootstrap.min.css.map' %}">
+    <link rel="stylesheet" href="{% static 'bootstrab/inx.css' %}">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(154, 154, 234);">
+    {% include 'nav.html' %}
+    {% block con %}
+    {% endblock con %}
+</body>
+</html>

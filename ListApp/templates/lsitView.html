@@ -1,0 +1,35 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block con %}
+
+<h1>list view :{{count}}  tasks</h1>
+
+<div class="serch ms-3">
+    <form action="" method="GET">
+        <input value="{{ddd}}" type="text" name="serch" id="" >
+        <input type="submit" value="serch" name="" id="">
+    </form>
+</div>
+
+
+<div class=" col-8  m-3 d-flex flex-wrap" >
+    <table class="table">
+        <tr>
+            <th>title</th>
+            <th>user</th>
+            <th></th>
+        </tr>
+    {% for task in tasks %}
+        <tr>
+            <td>{{ task.title}}</td>
+            <td> {{task.user}} </td>
+            <td>
+                <a href="{% url 'task' task.id %}"> <button>read more</button></a>
+                <a href="{% url 'upeated' task.id %}"> <button>update</button> </a>
+                <a href="{% url 'Delte' task.id %}"> <button>Delte</button> </a></td>
+        </tr>
+        <hr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock con %}

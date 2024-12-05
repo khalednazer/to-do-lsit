@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+
+{% block con %}
+
+
+
+
+<div class=" m-3 p-2 rounded bg-light col-3 " style="transform: translate(80%, 20%);">
+    <h5 class="card-title">{{ tas.title}}</h5>
+    <p class="card-text"> {{tas.desc}} </p>
+    <hr>
+    <p> {{tas.time}} </p>
+    <hr>
+    {% if tas.complet == True %}
+    <h3>status : completed </h3>
+    {% else  %}
+    <h3>status : pendding </h3>
+    {% endif %}
+    <a class="col-8 me-5" href="{% url 'Taskview' %}"> back</a>
+</div>
+
+{% endblock con %}

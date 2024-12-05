@@ -1,0 +1,23 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block con %}
+
+<h1>tsks list</h1>
+    <div class=" col-10  m-3 d-flex flex-wrap" style="width: 800px;">
+    {% for task in tasks %}
+    <div class=" m-1 p-2 rounded bg-light col-3">
+        <h5 class="card-title">{{ task.title}}</h5>
+        <p class="card-text"> {{task.desc}} </p>
+        <hr>
+        <h3> {{task.user}} </h3>
+        <hr>
+        <p> {{task.time}} </p>
+        <hr>
+        <h3>status : {{task.complet}} </h3>
+    </div>
+    
+    {% endfor %}
+</div>
+
+{% endblock con %}

@@ -1,0 +1,13 @@
+
+{% extends 'main.html' %}
+{% load static %}
+{% block con %}
+
+<form action="" class="m-4" method="POST">
+    {% csrf_token %}
+
+    {{ form.as_p}}
+    <input type="submit"  name="login" id=""> 
+</form>
+<p>creat a new account <a href="{% url 'createaccount' %}">create</a></p>
+{% endblock con %}

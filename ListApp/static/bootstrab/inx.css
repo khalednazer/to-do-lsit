@@ -1,0 +1,24 @@
+.frist_one, .second_rate, .thred_rate{
+    width: 50px;
+    height: 170px;
+    background-color: aqua;
+    background-image: linear-gradient(to top, green, yellow, orange);
+}
+.y {
+    width: 10px;
+    height: 200px;
+    background-color:antiquewhite;
+    flex-wrap: wrap;
+    td{
+        color: red;
+    }
+}
+
+
+a:hover{
+    background-color: aqua !important;
+}
+.dsf{
+    width: 20vw;
+    
+}

@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block con %}
+<div>
+
+    <a href="{% url 'Taskview' %}"><button class="m-3">back <--</button></a>
+    <h1>hello from update task</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" name=""  value="update" id="">
+    </form>
+</div>
+
+{% endblock con %}

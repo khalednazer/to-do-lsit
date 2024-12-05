@@ -1,0 +1,13 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block con %}
+<h1>hello from task form html</h1>
+<div class="m-5">
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" name="" value="create" id="">
+    </form>
+    </div>
+{% endblock con %}

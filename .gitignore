@@ -1,0 +1,6 @@
+__pycache__/
+settings.py
+__init__.py
+images
+db.sqlite3
+manage.py
